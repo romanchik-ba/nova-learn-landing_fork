@@ -1,3 +1,17 @@
 {
-	"extends": "next/core-web-vitals"
+	"extends": ["next/core-web-vitals", "prettier"],
+	"rules": {
+		"import/no-default-export": "error",
+		"no-console": "warn",
+		"no-unused-vars": "error",
+		"import/no-unresolved": "error"
+	},
+	"overrides": [
+		{
+			"files": ["src/app/**/*"],
+			"rules": {
+				"import/no-default-export": "off"
+			}
+		}
+	]
 }
