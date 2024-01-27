@@ -1,8 +1,0 @@
-.stack-popup {
-	@apply opacity-0 absolute bottom-[-14px] left-[50%] translate-x-[-50%] bg-[#1CADAD] px-[8px] rounded-[5px] z-10 invisible;
-	transition: all 1s;
-	&-arrow {
-		@apply absolute block top-[-7px] left-[50%] translate-x-[-50%] w-[8px] h-[8px] bg-[#1CADAD];
-		clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-	}
-}

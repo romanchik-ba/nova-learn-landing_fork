@@ -11,6 +11,19 @@ const config: Config = {
 			colors: {
 				mainBackground: '#181223',
 				mainText: '#fff'
+			},
+			keyframes: {
+				stackSlider: {
+					'0%': {
+						transform: 'translateX(0)'
+					},
+					'100%': {
+						transform: 'translateX(-100%)'
+					}
+				}
+			},
+			animation: {
+				'stack-slider': 'stackSlider 20s linear infinite'
 			}
 		}
 	},
