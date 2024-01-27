@@ -1,0 +1,19 @@
+.stack-slider {
+	@apply bg-[#302a56] border border-solid border-[#6F62AA] rounded-[10px];
+	&:hover .stack-slider-group {
+		animation-play-state: paused;
+	}
+	&-group {
+		@apply inline-block;
+		animation: 20s slide infinite linear;
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}

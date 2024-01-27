@@ -1,0 +1,6 @@
+.stack-slide {
+	@apply rounded-[16px] bg-[#1E2235] p-[14px] relative;
+	&:hover > .stack-popup {
+		@apply opacity-100 visible;
+	}
+}

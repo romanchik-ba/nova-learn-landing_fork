@@ -1,6 +1,10 @@
+import { Stack } from '@/components/stack'
+
 function Home() {
 	return (
-		<main className='flex min-h-screen max-w-screen-[1440px] flex-col items-center'></main>
+		<main className='flex min-h-screen flex-col items-center '>
+			<Stack />
+		</main>
 	)
 }
 

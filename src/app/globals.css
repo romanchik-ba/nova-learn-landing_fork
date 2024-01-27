@@ -5,3 +5,8 @@
 body {
 	@apply bg-mainBackground text-mainText;
 }
+
+.container {
+	max-width: 1065px;
+	margin: 0 auto;
+}
