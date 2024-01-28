@@ -5,7 +5,7 @@ import './globals.css'
 
 const inter = Inter({
 	subsets: ['latin'],
-	// weight: ['400', '700'],
+	weight: ['400', '700'],
 	variable: '--font-inter'
 })
 const montserrat = Montserrat({
@@ -34,9 +34,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={
-					(inter.variable, montserrat.variable, nunitoSans.variable)
-				}
+				className={`${inter.variable} ${montserrat.variable} ${nunitoSans.variable}`}
 			>
 				{children}
 			</body>

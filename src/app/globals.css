@@ -5,3 +5,15 @@
 body {
 	@apply bg-mainBackground text-mainText;
 }
+
+.inter {
+	font-family: var(--font-inter);
+}
+
+.monserat {
+	font-family: var(--font-montserrat);
+}
+
+.font-nunitoSans {
+	font-family: var(--font-nunitoSans);
+}

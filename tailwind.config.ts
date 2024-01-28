@@ -10,15 +10,11 @@ const config: Config = {
 		extend: {
 			colors: {
 				mainBackground: '#181223',
-				mainText: '#fff',
-				secondaryText: 'rgba(255, 255, 255, 0.70)',
-				mainLinkText: '#1FC6C6',
-				secondaryLinkText: '#7FCBCC'
+				mainText: '#fff'
 			},
 			fontFamily: {
 				inter: ['var(--font-inter)'],
-				montserrat: ['var(--font-montserrat)'],
-				nunitoSans: ['var(--font-nunitoSans']
+				montserrat: ['var(--font-montserrat)']
 			}
 		}
 	},
