@@ -1,9 +1,25 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat, Nunito_Sans } from 'next/font/google'
 
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+	subsets: ['latin'],
+	// weight: ['400', '700'],
+	variable: '--font-inter'
+})
+const montserrat = Montserrat({
+	style: 'normal',
+	subsets: ['latin', 'cyrillic'],
+	weight: ['400', '700'],
+	variable: '--font-montserrat'
+})
+const nunitoSans = Nunito_Sans({
+	style: 'normal',
+	subsets: ['latin', 'cyrillic'],
+	weight: ['400', '700'],
+	variable: '--font-nunitoSans'
+})
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -17,7 +33,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+			<body
+				className={
+					(inter.variable, montserrat.variable, nunitoSans.variable)
+				}
+			>
+				{children}
+			</body>
 		</html>
 	)
 }
