@@ -10,7 +10,12 @@ interface titleProps {
 
 export const Title = ({ variant, children, className }: titleProps) => {
 	const titleClasses = classNames(
-		'font-montserrat leading-[105%]',
+		'text-mainText font-montserrat leading-[105%]',
+
+		variant === 'h1' ? 'text-[80px] font-bold leading-[84px]' : '',
+		variant === 'h2' ? 'text-[64px] font-bold leading-[68px]' : '',
+		variant === 'h3' ? 'text-[48px] font-bold leading-[68px]' : '',
+		variant === 'h4' ? 'text-[32px] font-bold leading-[34px]' : '',
 		className || ''
 	)
 
@@ -21,6 +26,8 @@ export const Title = ({ variant, children, className }: titleProps) => {
 			return <h2 className={titleClasses}>{children}</h2>
 		case 'h3':
 			return <h3 className={titleClasses}>{children}</h3>
+		case 'h4':
+			return <h4 className={titleClasses}>{children}</h4>
 		default:
 			return ''
 	}
