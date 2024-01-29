@@ -4,19 +4,14 @@ import { classNames } from '@/utils/classNames'
 
 interface titleProps {
 	variant: string
-	size: string
-	className?: string | any
+	className?: string
 	children?: ReactNode
 }
 
-export const Title = ({ variant, children, size, className }: titleProps) => {
+export const Title = ({ variant, children, className }: titleProps) => {
 	const titleClasses = classNames(
-		size === 'default' ? 'text-[16px]' : '',
-		size === 'big' ? 'text-[80px]' : '',
-		size === 'normal' ? 'text-[64px]' : '',
-		size === 'middle' ? 'text-[48px]' : '',
-		size === 'small' ? 'text-[32px]' : '',
-		className
+		'font-montserrat leading-[105%]',
+		className || ''
 	)
 
 	switch (variant) {

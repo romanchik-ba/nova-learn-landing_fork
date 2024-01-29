@@ -1,13 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat, Nunito_Sans } from 'next/font/google'
+import { Montserrat, Nunito_Sans } from 'next/font/google'
 
 import './globals.css'
 
-const inter = Inter({
-	subsets: ['latin'],
-	weight: ['400', '700'],
-	variable: '--font-inter'
-})
 const montserrat = Montserrat({
 	style: 'normal',
 	subsets: ['latin', 'cyrillic'],
@@ -33,9 +28,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body
-				className={`${inter.variable} ${montserrat.variable} ${nunitoSans.variable}`}
-			>
+			<body className={` ${montserrat.variable} ${nunitoSans.variable}`}>
 				{children}
 			</body>
 		</html>

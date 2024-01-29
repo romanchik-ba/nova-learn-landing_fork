@@ -11,10 +11,6 @@ const config: Config = {
 			colors: {
 				mainBackground: '#181223',
 				mainText: '#fff'
-			},
-			fontFamily: {
-				inter: ['var(--font-inter)'],
-				montserrat: ['var(--font-montserrat)']
 			}
 		}
 	},
