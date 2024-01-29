@@ -1,4 +1,4 @@
-import { StackSlider } from './stack-slider'
+import { StackSlider } from './StackSlider'
 
 export const Stack = () => {
 	return (

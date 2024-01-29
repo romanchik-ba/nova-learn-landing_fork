@@ -1,5 +1,5 @@
-import { StackSlide } from '../stack-slide'
-import { stackSlidesArr } from '../stack.data'
+import { StackSlide } from './StackSlide'
+import { stackSlidesArr } from './stack.data'
 
 export const StackSlider = () => {
 	return (
