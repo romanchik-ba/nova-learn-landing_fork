@@ -18,6 +18,14 @@
 			"rules": {
 				"import/no-default-export": "error"
 			}
+		},
+		{
+			"files": [
+				"src/types/swiper.d.ts"
+			],
+			"rules": {
+				"no-unused-vars": "off"
+			}
 		}
 	]
 }

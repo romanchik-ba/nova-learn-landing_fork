@@ -1,3 +1,7 @@
+:root {
+	--container-size: 1065px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +10,10 @@
 	.animate-paused {
 		animation-play-state: paused;
 	}
+
+	.project-next-slide {
+		@apply cursor-pointer pointer-events-auto;
+	} /* remove disabling from next slide */
 }
 
 body {
@@ -13,6 +21,6 @@ body {
 }
 
 .container {
-	max-width: 1065px;
+	max-width: var(--container-size);
 	margin: 0 auto;
 }
