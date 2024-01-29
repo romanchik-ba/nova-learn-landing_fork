@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { StackPopup } from '../stack-popup'
+import { StackPopup } from './StackPopup'
 
 export const StackSlide = ({ src, alt }: { src: string; alt: string }) => {
 	return (
