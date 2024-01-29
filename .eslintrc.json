@@ -1,8 +1,5 @@
 {
-	"extends": [
-		"next/core-web-vitals",
-		"prettier"
-	],
+	"extends": ["next/core-web-vitals", "prettier"],
 	"rules": {
 		"import/no-default-export": "off",
 		"no-console": "warn",
@@ -11,10 +8,7 @@
 	},
 	"overrides": [
 		{
-			"files": [
-				"src/components/**/*",
-				"src/utils/**/*"
-			],
+			"files": ["src/components/**/*", "src/utils/**/*"],
 			"rules": {
 				"import/no-default-export": "error"
 			}
