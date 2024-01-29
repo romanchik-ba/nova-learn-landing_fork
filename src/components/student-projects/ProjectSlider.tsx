@@ -22,6 +22,8 @@ const ProjectSlider = (props: {
 			slide-to-clicked-slide
 			loop
 			class='self-start'
+			autoplay-delay='2500'
+			speed={700}
 		>
 			{projectsItemsArr.map(({ src }, index) => (
 				<ProjectSlide {...props} key={index} src={src} />
