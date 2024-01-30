@@ -20,6 +20,13 @@ body {
 	@apply bg-mainBackground text-mainText;
 }
 
+.font-montserrat {
+	font-family: var(--font-montserrat);
+}
+
+.font-nunitoSans {
+	font-family: var(--font-nunitoSans);
+
 .container {
 	max-width: var(--container-size);
 	margin: 0 auto;
