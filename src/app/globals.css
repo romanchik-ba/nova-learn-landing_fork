@@ -12,6 +12,13 @@ body {
 	@apply bg-mainBackground text-mainText;
 }
 
+.font-montserrat {
+	font-family: var(--font-montserrat);
+}
+
+.font-nunitoSans {
+	font-family: var(--font-nunitoSans);
+
 .container {
 	max-width: 1065px;
 	margin: 0 auto;
