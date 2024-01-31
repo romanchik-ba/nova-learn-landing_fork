@@ -66,7 +66,7 @@ export const ProjectSlider = () => {
 	return (
 		<div className='grow-0 shrink basis-[53%] max-w-full'>
 			<div
-				className='overflow-hidden pointer-events-none mb-[5px] ml-[12px]'
+				className='overflow-hidden pointer-events-none mb-[5px] ml-[15px]'
 				ref={sliderRef}
 			>
 				<div className='flex'>

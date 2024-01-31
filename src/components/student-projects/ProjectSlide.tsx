@@ -26,7 +26,9 @@ export const ProjectSlide = ({
 			<div
 				className={classNames(
 					'border border-solid border-[#8051F8] rounded-[20px]',
-					isThumb ? 'p-[10px] m-[5px] hover:shadow-projectThumb' : ''
+					isThumb
+						? 'p-[10px] m-[8px] hover:shadow-projectThumb hover:scale-105 transition-all duration-500'
+						: ''
 				)} // if thumb - add hover effect
 			>
 				<Image className={imageClassName} src={src} alt='image' />
