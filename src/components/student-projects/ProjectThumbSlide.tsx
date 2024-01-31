@@ -14,7 +14,7 @@ export const ProjectThumbSlide = ({
 	return (
 		<ProjectSlide
 			onClick={() => onClick(index)}
-			className='pl-[7px] basis-[40%] shrink-0 grow-0 cursor-pointer'
+			className='pl-[7px] basis-[34%] shrink-0 grow-0 cursor-pointer'
 			imageClassName='block h-[140px] w-full object-cover pointer-events-none'
 			src={src}
 			isThumb

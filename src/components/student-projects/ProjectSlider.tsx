@@ -66,7 +66,7 @@ export const ProjectSlider = () => {
 	return (
 		<div className='grow-0 shrink basis-[53%] max-w-full'>
 			<div
-				className='overflow-hidden pointer-events-none mb-[5px] ml-[15px]'
+				className='overflow-hidden pointer-events-none mb-[32px] ml-[15px]'
 				ref={sliderRef}
 			>
 				<div className='flex'>
@@ -80,18 +80,16 @@ export const ProjectSlider = () => {
 					))}
 				</div>
 			</div>
-			<div className='mt-[32px]'>
-				<div ref={sliderThumbsRef} className='overflow-hidden'>
-					<div className='flex'>
-						{projectsItemsArr.map(({ src }, index) => (
-							<ProjectThumbSlide
-								onClick={onThumbClick}
-								src={src}
-								key={index}
-								index={index}
-							/>
-						))}
-					</div>
+			<div ref={sliderThumbsRef} className='overflow-hidden -mr-[200px]'>
+				<div className='flex'>
+					{projectsItemsArr.map(({ src }, index) => (
+						<ProjectThumbSlide
+							onClick={onThumbClick}
+							src={src}
+							key={index}
+							index={index}
+						/>
+					))}
 				</div>
 			</div>
 		</div>
