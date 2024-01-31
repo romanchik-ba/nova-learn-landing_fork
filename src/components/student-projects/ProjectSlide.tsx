@@ -1,40 +1,36 @@
-import Image from 'next/image'
 import type { StaticImageData } from 'next/image'
-import { useRef } from 'react'
+import Image from 'next/image'
 
-import { projectsItemsArr } from './projects.data'
+import { classNames } from '@/utils/classNames'
 
 export const ProjectSlide = ({
 	src,
-	setActiveSlide
+	className,
+	imageClassName,
+	onClick,
+	isThumb
 }: {
 	src: StaticImageData
-	setActiveSlide: (slide: StaticImageData) => void // eslint-disable-line no-unused-vars
+	className?: string
+	imageClassName: string
+	onClick?: () => void
+	isThumb?: boolean
 }) => {
-	const slideRef = useRef<HTMLElement>(null)
-
-	const clickSlide = () => {
-		const slideIndexLabel =
-			slideRef.current?.getAttribute('aria-label') || ''
-		const slideIndex = +slideIndexLabel.split('/')[0] - 1
-
-		setActiveSlide(projectsItemsArr[slideIndex].src)
-	} // change active image
+	const projectSlideClassName = classNames(
+		'select-none min-w-0',
+		className || ''
+	)
 
 	return (
-		<swiper-slide
-			ref={slideRef}
-			class='!w-auto border border-solid border-[#8051F8] rounded-[20px] select-none pointer-events-none'
-		>
-			<div onClick={clickSlide} className='p-[10px]'>
-				<Image
-					className=''
-					src={src}
-					alt='project'
-					width={200}
-					height={140}
-				/>
+		<div onClick={onClick} className={projectSlideClassName}>
+			<div
+				className={classNames(
+					'border border-solid border-[#8051F8] rounded-[20px]',
+					isThumb ? 'p-[10px] m-[5px] hover:shadow-projectThumb' : ''
+				)} // if thumb - add hover effect
+			>
+				<Image className={imageClassName} src={src} alt='image' />
 			</div>
-		</swiper-slide>
+		</div>
 	)
 }

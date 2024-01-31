@@ -10,10 +10,6 @@
 	.animate-paused {
 		animation-play-state: paused;
 	}
-
-	.project-next-slide {
-		@apply cursor-pointer pointer-events-auto;
-	} /* remove disabling from next slide */
 }
 
 body {
@@ -26,7 +22,7 @@ body {
 
 .font-nunitoSans {
 	font-family: var(--font-nunitoSans);
-
+}
 .container {
 	max-width: var(--container-size);
 	margin: 0 auto;
