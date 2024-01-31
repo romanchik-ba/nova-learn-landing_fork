@@ -1,5 +1,13 @@
+import { Hero } from '@/components/hero'
+import { MainBG } from '@/components/image'
+
 function Home() {
-	return <main className='flex min-h-screen flex-col items-center '></main>
+	return (
+		<>
+			<MainBG />
+			<Hero />
+		</>
+	)
 }
 
 export default Home
