@@ -10,7 +10,7 @@ interface titleProps {
 
 export const Text = ({ children, className, transparent }: titleProps) => {
 	const textClasses = classNames(
-		'text-mainText leading-[31.5px] font-nunitoSans',
+		'text-[21px] text-mainText leading-[31.5px] font-nunitoSans',
 		transparent ? 'opacity-[70%]' : '',
 
 		className || ''
