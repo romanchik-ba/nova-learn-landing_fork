@@ -29,7 +29,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={` ${montserrat.variable} ${nunitoSans.variable}`}>
-				{children}
+				<main className='relative flex min-h-screen max-w-[1440px] flex-col items-center overflow-x-hidden m-auto'>
+					{children}
+				</main>
 			</body>
 		</html>
 	)

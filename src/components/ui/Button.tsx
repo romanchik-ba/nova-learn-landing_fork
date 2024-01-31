@@ -26,7 +26,7 @@ export const Button = ({
 	...props
 }: TButtonProps) => {
 	const buttonClasses = classNames(
-		'flex gap-2 cursor-pointer select-none border-[1px] [outline:none] shadow-none transition duration-500 group',
+		'w-fit flex gap-2 cursor-pointer select-none border-[1px] [outline:none] shadow-none transition duration-500 group',
 		variant === 'primary' && !link
 			? 'pt-[16px] pb-[18px] px-[53px] rounded-[8px] text-[20px] leading-[24px] bg-accent border-accent hover:shadow-neon hover:brightness-125 active:brightness-90 active:shadow-none text-white'
 			: '',
