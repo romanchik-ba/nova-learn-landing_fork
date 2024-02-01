@@ -1,11 +1,5 @@
-import { Review } from '@/components/review'
-
 function Home() {
-	return (
-		<>
-			<Review />
-		</>
-	)
+	return <></>
 }
 
 export default Home
