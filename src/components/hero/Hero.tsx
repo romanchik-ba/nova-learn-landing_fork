@@ -3,7 +3,7 @@ import { BlurryDot, Button, Text, Title } from '@/components/ui'
 
 export const Hero = () => {
 	return (
-		<div className='flex max-w-[1065px] mt-[135px]'>
+		<div className='flex max-w-[1065px] h-svh mt-[135px]'>
 			<div className='relative flex flex-col gap-[30px] pt-[88px] pb-[44px]'>
 				<Title variant='h1'>From Zero to Hero with Us</Title>
 				<Text transparent className='max-w-[426px] mb-[18px]'>

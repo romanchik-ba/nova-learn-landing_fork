@@ -20,6 +20,12 @@ const config: Config = {
 				'radial-gradient':
 					'radial-gradient(closest-side, rgba(80, 65, 147, 20) 60%, transparent 60%)'
 			},
+			gridTemplateColumns: {
+				news: 'repeat(2, 40%) 1fr'
+			},
+			gridTemplateRows: {
+				news: 'repeat(2, 40%) 1fr'
+			},
 			keyframes: {
 				stackSlider: {
 					'0%': {
