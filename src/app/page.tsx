@@ -1,11 +1,9 @@
-import { Hero } from '@/components/hero'
-import { MainBG } from '@/components/image'
+import { Review } from '@/components/review'
 
 function Home() {
 	return (
 		<>
-			<MainBG />
-			<Hero />
+			<Review />
 		</>
 	)
 }
