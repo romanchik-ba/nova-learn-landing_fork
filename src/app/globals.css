@@ -35,7 +35,7 @@ body {
 	width: 100%;
 
 	height: 1px;
-	animation: animate_one 20s linear infinite;
+	animation: animate_border_top 20s linear infinite;
 }
 .border-animation-top::after {
 	position: absolute;
@@ -47,94 +47,11 @@ body {
 	width: 100%;
 
 	height: 1px;
-	animation: animate_one 20s linear infinite;
+	animation: animate_border_top 20s linear infinite;
 	animation-delay: 10s;
 }
 
-@keyframes animate_one {
-	0% {
-		transform: translateX(-300%);
-		background: linear-gradient(
-			to right,
-			transparent,
-			rgba(128, 81, 248, 1)
-		);
-	}
-	100% {
-		transform: translateX(300%);
-		background: linear-gradient(
-			to right,
-			transparent,
-			rgba(0, 148, 199, 1)
-		);
-	}
-}
-
-.border-animation-right::before {
-	position: absolute;
-	top: 0;
-	right: 0;
-	content: '';
-	opacity: 0.5;
-	width: 1px;
-	height: 150%;
-	animation: animate_two 20s linear infinite;
-	/* animation-delay: 1s; */
-}
-.border-animation-right::after {
-	position: absolute;
-	top: 0;
-	right: 0;
-	content: '';
-	opacity: 0.5;
-	width: 1px;
-	height: 150%;
-	animation: animate_two 20s linear infinite;
-	animation-delay: 10s;
-}
-
-@keyframes animate_two {
-	0% {
-		transform: translateY(-300%);
-		background: linear-gradient(
-			to bottom,
-			transparent,
-			rgba(128, 81, 248, 1)
-		);
-	}
-	100% {
-		transform: translateY(300%);
-		background: linear-gradient(
-			to bottom,
-			transparent,
-			rgba(0, 148, 199, 1)
-		);
-	}
-}
-.border-animation-bottom::before {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	content: '';
-	opacity: 0.5;
-	width: 100%;
-	height: 1px;
-	animation: animate_three 20s linear infinite;
-	/* animation-delay: 1s; */
-}
-.border-animation-bottom::after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	content: '';
-	opacity: 0.5;
-	width: 100%;
-	height: 1px;
-	animation: animate_three 20s linear infinite;
-	animation-delay: 10s;
-}
-
-@keyframes animate_three {
+@keyframes animate_border_top {
 	0% {
 		transform: translateX(300%);
 		background: linear-gradient(
@@ -158,7 +75,7 @@ body {
 	width: 1px;
 	z-index: -10;
 	height: 150%;
-	animation: animate_four 20s linear infinite;
+	animation: animate_border_left 20s linear infinite;
 	/* animation-delay: 1s; */
 }
 
@@ -171,11 +88,11 @@ body {
 	width: 1px;
 	z-index: -10;
 	height: 150%;
-	animation: animate_four 20s linear infinite;
+	animation: animate_border_left 20s linear infinite;
 	animation-delay: 10s;
 }
 
-@keyframes animate_four {
+@keyframes animate_border_left {
 	0% {
 		transform: translateY(300%);
 		background: linear-gradient(to top, transparent, rgba(128, 81, 248, 1));
