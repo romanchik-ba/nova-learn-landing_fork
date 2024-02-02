@@ -5,6 +5,8 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 import { useCallback, useRef, useState } from 'react'
 
+import { emblaScrollToSlideWithDirection } from '@/utils/emblaScrollToSlideWithDirection'
+
 import { ReviewSlide } from './ReviewSlide'
 import { reviewItemsArr } from './review.data'
 
@@ -32,7 +34,12 @@ export const ReviewSlider = () => {
 			if (!sliderReviewApi) return
 
 			if (index !== activeIndex) {
-				sliderReviewApi.scrollTo(index)
+				emblaScrollToSlideWithDirection(
+					sliderReviewApi,
+					index,
+					false,
+					-1
+				)
 
 				const autoplaySlider = sliderReviewApi.plugins()
 					.autoplay as AutoplayType

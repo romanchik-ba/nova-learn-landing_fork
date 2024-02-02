@@ -19,8 +19,3 @@ body {
 .font-nunitoSans {
 	font-family: var(--font-nunitoSans);
 }
-
-.container {
-	max-width: 1065px;
-	margin: 0 auto;
-}
