@@ -1,14 +1,16 @@
+import { Container } from '../container'
+import { Title } from '../ui'
 import { StackSlider } from './StackSlider'
 
 export const Stack = () => {
 	return (
 		<section>
-			<div className='container'>
-				<h1 className='text-[32px] font-bold mb-[17px]'>
+			<Container className=''>
+				<Title variant='h4' className='mb-[17px]'>
 					Your Future Tech Stack
-				</h1>
+				</Title>
 				<StackSlider />
-			</div>
+			</Container>
 		</section>
 	)
 }
