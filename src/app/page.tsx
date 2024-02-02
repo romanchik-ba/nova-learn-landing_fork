@@ -1,10 +1,14 @@
-import { StudentProjects } from '@/components/student-projects'
+import { Hero } from '@/components/hero'
+import { MainBG } from '@/components/image'
+import { News } from '@/components/news'
 
 function Home() {
 	return (
-		<main className='flex min-h-screen flex-col items-center'>
-			<StudentProjects />
-		</main>
+		<>
+			<MainBG />
+			<Hero />
+			<News />
+		</>
 	)
 }
 

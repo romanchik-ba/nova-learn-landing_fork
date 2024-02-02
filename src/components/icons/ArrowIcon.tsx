@@ -1,10 +1,9 @@
-export const ArrowIcon = ({
-	size = 20,
-	className
-}: {
-	size: number
+type TArrowIconProps = {
+	size?: number
 	className?: string
-}) => {
+}
+
+export const ArrowIcon = ({ size = 20, className }: TArrowIconProps) => {
 	return (
 		<svg
 			width={size}
