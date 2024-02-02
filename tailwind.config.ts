@@ -15,7 +15,8 @@ const config: Config = {
 				accent: '#1FC6C6'
 			},
 			boxShadow: {
-				neon: '0px 0px 4px 2px rgba(31,198,198,0.50)'
+				neon: '0px 0px 4px 2px rgba(31,198,198,0.50)',
+				projectThumb: '0px 0px 8px 5px rgba(128, 95, 202, 0.37)'
 			},
 			backgroundImage: {
 				'radial-gradient':
