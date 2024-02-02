@@ -17,6 +17,7 @@ export const ProjectSlider = () => {
 	const [sliderThumbsRef, sliderThumbsRefApi] = useEmblaCarousel(
 		{
 			containScroll: 'keepSnaps',
+			duration: 60,
 			loop: true,
 			align: 'start',
 			watchDrag: false // disabled drag
