@@ -1,4 +1,5 @@
 import { Button, Text, Title } from '../ui'
+import { BorderLines } from '../ui/BorderLines'
 
 export const News = () => {
 	return (
@@ -15,8 +16,8 @@ export const News = () => {
 							ipsum dolor sit amet consectetur adipisicing elit.
 							Repudiandae nam, eaque eius iusto taque
 						</Text>
-						<div className='border-animation-left'></div>
-						<div className='border-animation-top'></div>
+						<BorderLines top />
+						<BorderLines left />
 					</div>
 				</div>
 				<div className='grid grid-cols-subgrid col-span-3'>
@@ -27,15 +28,15 @@ export const News = () => {
 							ipsum dolor sit amet consectetur adipisicing elit.
 							Repudiandae nam, eaque eius iusto itaque
 						</Text>
-						<div className='border-animation-top'></div>
-						<div className='border-animation-left'></div>
+						<BorderLines top />
+						<BorderLines left />
 					</div>
 				</div>
 				<div className='grid grid-cols-subgrid col-span-3'>
 					<div className='relative col-start-3 p-[15px]'>
 						<Button variant='ghost'>More news</Button>
-						<div className='border-animation-top'></div>
-						<div className='border-animation-left'></div>
+						<BorderLines top />
+						<BorderLines left />
 					</div>
 				</div>
 			</div>

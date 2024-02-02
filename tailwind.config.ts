@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 
 const config: Config = {
 	content: [
@@ -24,7 +25,7 @@ const config: Config = {
 				news: 'repeat(2, 40%) 1fr'
 			},
 			gridTemplateRows: {
-				news: 'repeat(2, 40%) 1fr'
+				news: 'repeat(3, 40%) 1fr'
 			},
 			keyframes: {
 				stackSlider: {
@@ -52,15 +53,53 @@ const config: Config = {
 					'0%': {
 						transform: 'rotate(360deg)'
 					}
+				},
+				animateBorderHorizontal: {
+					'0%': {
+						transform: 'translateX(300%)',
+						background:
+							'linear-gradient(to left, transparent, rgba(128, 81, 248, 1))'
+					},
+					'100%': {
+						transform: 'translateX(-300%)',
+						background:
+							'linear-gradient(to left, transparent, rgba(0, 148, 199, 1))'
+					}
+				},
+				animateBorderVertical: {
+					'0%': {
+						transform: 'translateY(300%)',
+						background:
+							'linear-gradient(to top, transparent, rgba(128, 81, 248, 1))'
+					},
+					'100%': {
+						transform: 'translateY(-300%)',
+						background:
+							'linear-gradient(to top, transparent, rgba(0, 148, 199, 1))'
+					}
 				}
 			},
 			animation: {
 				'stack-slider': 'stackSlider 20s linear infinite',
 				rotate: 'rotate 40s linear infinite',
-				'rotate-reverse': 'rotateReverse 30s linear infinite'
+				'rotate-reverse': 'rotateReverse 30s linear infinite',
+				'border-vertical': 'animateBorderVertical 30s linear infinite',
+				'border-horizontal':
+					'animateBorderHorizontal 30s linear infinite'
 			}
 		}
 	},
-	plugins: []
+	plugins: [
+		plugin(function ({ matchUtilities, theme }) {
+			matchUtilities(
+				{
+					'animate-delay': value => ({
+						animationDelay: value
+					})
+				},
+				{ values: theme('transitionDelay') }
+			)
+		})
+	]
 }
 export default config
