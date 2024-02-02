@@ -1,7 +1,6 @@
+import { Container } from '@/components/container'
 import { HeroBgBig, HeroBgSmall } from '@/components/image'
 import { BlurryDot, Button, Text, Title } from '@/components/ui'
-
-import { Container } from '../container'
 
 export const Hero = () => {
 	return (

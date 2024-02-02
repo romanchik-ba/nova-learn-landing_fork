@@ -1,6 +1,6 @@
 import { Hero } from '@/components/hero'
 import { MainBG } from '@/components/image'
-import { News } from '@/components/news/News'
+import { News } from '@/components/news'
 
 function Home() {
 	return (
