@@ -19,3 +19,11 @@ body {
 .font-nunitoSans {
 	font-family: var(--font-nunitoSans);
 }
+
+.banner-team-gradient {
+	background: linear-gradient(
+		180deg,
+		rgba(60, 47, 199, 0.6) 0%,
+		rgba(111, 56, 189, 0.6) 100%
+	);
+}
