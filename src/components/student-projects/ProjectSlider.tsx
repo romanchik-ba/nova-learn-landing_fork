@@ -3,7 +3,7 @@
 import Autoplay, { type AutoplayType } from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { ProjectSlide } from './ProjectSlide'
 import { ProjectThumbSlide } from './ProjectThumbSlide'
@@ -12,17 +12,9 @@ import { projectsItemsArr } from './projects.data'
 export const ProjectSlider = () => {
 	const [activeIndex, setActiveIndex] = useState<number>(0)
 
-	const [sliderRef, sliderRefApi] = useEmblaCarousel(
-		{
-			loop: true
-		},
-		[
-			Autoplay({
-				delay: 7000,
-				stopOnInteraction: false
-			})
-		]
-	) // main-slider init
+	const [sliderRef, sliderRefApi] = useEmblaCarousel({
+		loop: true
+	}) // main-slider init
 
 	const [sliderThumbsRef, sliderThumbsRefApi] = useEmblaCarousel(
 		{
@@ -39,29 +31,51 @@ export const ProjectSlider = () => {
 		]
 	) // thumb-slider init
 
+	const isManualChangeSlide = useRef<boolean>(false)
+
 	const onThumbClick = (index: number) => {
+		// change main slide after click by thumb slide
 		if (!sliderRefApi || !sliderThumbsRefApi) return
 		if (index !== activeIndex) {
+			isManualChangeSlide.current = true // check main slide change by mouse click on thumb slide
 			sliderRefApi.scrollTo(index)
 			setActiveIndex(index)
 		}
-	} // change main slide after click by thumb slide
+	}
 
 	const onSelect = useCallback(() => {
-		if (!sliderRefApi || !sliderThumbsRefApi) return
-		sliderThumbsRefApi.scrollTo(sliderRefApi.selectedScrollSnap()) // change main slide after click by thumb slide
+		if (
+			!sliderRefApi ||
+			!sliderThumbsRefApi ||
+			!isManualChangeSlide.current // check main slide change by thumb slide autoplay
+		)
+			return
+
+		sliderThumbsRefApi.scrollTo(sliderRefApi.selectedScrollSnap()) // change thumb slide after click by thumb slide
+
+		isManualChangeSlide.current = false // reset mouse event state
+
 		const autoplayThumbs = sliderThumbsRefApi.plugins()
 			.autoplay as AutoplayType
-		const autoplayMain = sliderRefApi.plugins().autoplay as AutoplayType
+
 		autoplayThumbs.reset() // reset autoplay thumb slider timer after manual switching slide
-		autoplayMain.reset() // reset autoplay main slider timer after manual switching slide
 	}, [sliderRefApi, sliderThumbsRefApi])
 
+	const changeMainSlideByThumbSlideAutoplay = () => {
+		// change main slide after thumb slider autoplay
+
+		if (isManualChangeSlide.current || !sliderRefApi || !sliderThumbsRefApi)
+			return
+		sliderRefApi.scrollTo(sliderThumbsRefApi.selectedScrollSnap())
+	}
+
 	useEffect(() => {
+		// add event listeners for sliders
 		if (!sliderRefApi || !sliderThumbsRefApi) return
 		sliderRefApi.on('select', onSelect)
 		sliderRefApi.on('reInit', onSelect)
-	}, [onSelect, sliderRefApi, sliderThumbsRefApi]) // add event listeners for main slider
+		sliderThumbsRefApi.on('select', changeMainSlideByThumbSlideAutoplay)
+	}, [onSelect, sliderRefApi, sliderThumbsRefApi]) // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
 		<div className='grow-0 shrink basis-[53%] max-w-full'>
