@@ -18,6 +18,14 @@
 			"rules": {
 				"import/no-default-export": "error"
 			}
-		}
+		},
+		{
+			"files": [
+				"src/types/**/*"
+			],
+			"rules": {
+				"no-unused-vars": "off"
+			}
+		} // ignore params into type fn
 	]
 }
