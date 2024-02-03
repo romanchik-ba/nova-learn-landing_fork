@@ -18,10 +18,6 @@ const config: Config = {
 				neon: '0px 0px 4px 2px rgba(31,198,198,0.50)',
 				projectThumb: '0px 0px 8px 5px rgba(128, 95, 202, 0.37)'
 			},
-			backgroundImage: {
-				'radial-gradient':
-					'radial-gradient(closest-side, rgba(80, 65, 147, 20) 60%, transparent 60%)'
-			},
 			gridTemplateColumns: {
 				news: 'repeat(2, 40%) 1fr'
 			},
