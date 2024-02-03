@@ -1,14 +1,25 @@
 import { Container } from '../container'
+import { ProjectsBG } from '../image/ProjectsBG'
+import { BlurryDot, Title } from '../ui'
 import { ProjectSlider } from './ProjectSlider'
 
 export const StudentProjects = () => {
 	return (
-		<section className='w-full mt-[20px]'>
+		<section className='relative w-full mb-[250px]'>
+			<ProjectsBG />
+			<BlurryDot
+				color='rgba(143, 21, 255, 0.42)'
+				top='-330px'
+				right='-240px'
+			/>
 			<Container>
 				<div className='flex justify-between gap-x-[50px]'>
-					<h1 className='text-[64px] w-full font-bold grow-0 shrink basis-[42%]'>
+					<Title
+						variant='h3'
+						className='w-full grow-0 shrink basis-[42%]'
+					>
 						Our students project
-					</h1>
+					</Title>
 					<ProjectSlider />
 				</div>
 			</Container>

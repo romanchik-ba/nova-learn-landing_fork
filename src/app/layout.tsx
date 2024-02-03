@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Montserrat, Nunito_Sans } from 'next/font/google'
 
+import { Footer } from '@/components/footer'
+
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -32,6 +34,7 @@ export default function RootLayout({
 				<main className='relative flex min-h-screen max-w-[1440px] flex-col items-center overflow-x-hidden m-auto'>
 					{children}
 				</main>
+				<Footer />
 			</body>
 		</html>
 	)
