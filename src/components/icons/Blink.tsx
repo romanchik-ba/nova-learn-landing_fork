@@ -16,12 +16,11 @@ export const Blink = ({
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			width='1023'
-			height='1392'
+			width={width}
+			height={height}
 			fill='none'
 			viewBox='0 0 1023 1392'
 			className={blinkClassName}
-			style={{ width, height }}
 		>
 			<g filter='url(#filter0_f_145_228)'>
 				<ellipse
