@@ -21,9 +21,6 @@ const config: Config = {
 			gridTemplateColumns: {
 				news: 'repeat(2, 40%) 1fr'
 			},
-			gridTemplateRows: {
-				news: 'repeat(3, 40%) 1fr'
-			},
 			keyframes: {
 				stackSlider: {
 					'0%': {

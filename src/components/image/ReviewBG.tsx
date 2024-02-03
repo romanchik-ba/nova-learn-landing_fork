@@ -1,7 +1,7 @@
 export const ReviewBG = () => {
 	return (
 		<svg
-			className='absolute top-[300px] left-0 right-0 bottom-0 z-40'
+			className='absolute top-[300px] left-0 right-0 bottom-0 -z-10'
 			width={1440}
 			height={776}
 			viewBox='0 0 1440 776'
