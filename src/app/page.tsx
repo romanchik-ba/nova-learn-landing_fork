@@ -5,6 +5,7 @@ import { RapidGrowth } from '@/components/rapid-growth'
 import { Review } from '@/components/review'
 import { Stack } from '@/components/stack'
 import { StudentProjects } from '@/components/student-projects'
+import { TeamBanner } from '@/components/team-banner'
 
 function Home() {
 	return (
@@ -16,6 +17,7 @@ function Home() {
 			<Review />
 			<News />
 			<RapidGrowth />
+			<TeamBanner />
 		</>
 	)
 }
