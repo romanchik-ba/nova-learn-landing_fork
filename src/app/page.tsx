@@ -1,6 +1,7 @@
 import { Hero } from '@/components/hero'
 import { MainBG } from '@/components/image'
 import { News } from '@/components/news'
+import { RapidGrowth } from '@/components/rapid-growth'
 
 function Home() {
 	return (
@@ -8,6 +9,7 @@ function Home() {
 			<MainBG />
 			<Hero />
 			<News />
+			<RapidGrowth />
 		</>
 	)
 }
