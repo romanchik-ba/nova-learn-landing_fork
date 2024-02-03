@@ -2,6 +2,7 @@ import { classNames } from '@/utils/classNames'
 
 type BlurryDotProps = {
 	className?: string
+	color: string
 	left?: string
 	top?: string
 	right?: string
@@ -10,23 +11,25 @@ type BlurryDotProps = {
 
 export const BlurryDot = ({
 	className,
-	left = '0px',
-	top = '0px',
+	color,
+	left,
+	top,
 	right,
 	bottom
 }: BlurryDotProps) => {
 	return (
-		<div
+		<span
 			style={{
 				left,
 				top,
 				right,
-				bottom
+				bottom,
+				background: `radial-gradient(closest-side, ${color} 60%, transparent 60%)`
 			}}
 			className={classNames(
-				`absolute w-[550px] h-[550px] bg-radial-gradient blur-[200px] -z-20`,
+				`absolute w-[550px] h-[550px] blur-[200px] -z-20`,
 				className || ''
 			)}
-		></div>
+		></span>
 	)
 }

@@ -5,7 +5,7 @@ import { newsArr } from './news.data'
 
 export const NewsItems = () => {
 	return (
-		<div className='grid grid-cols-news grid-rows-news transition duration-500'>
+		<div className='grid grid-cols-news transition duration-500'>
 			{newsArr.map(n => (
 				<NewsItem key={n.id} text={n.text} position={n.position} />
 			))}
