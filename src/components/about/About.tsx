@@ -1,6 +1,8 @@
 import { Container } from '../container'
 import { AboutBG } from '../image/AboutBG'
 import { AboutMessage } from '../image/AboutMessage'
+import { AboutSpin } from '../image/AboutSpin'
+import { AboutSpinSmall } from '../image/AboutSpinSmall'
 import { Text, Title } from '../ui'
 
 export const About = () => {
@@ -9,11 +11,12 @@ export const About = () => {
 			<AboutBG />
 			<Container className='flex'>
 				<div className='w-1/2 pt-[270px]'>
-					<div className='py-[65px] px-[40px]'>
+					<div className='relative flex justify-end items-center py-[65px] px-[40px]'>
+						<AboutSpin />
+						<AboutSpinSmall />
 						<AboutMessage />
 					</div>
 				</div>
-				{/* <AboutSpin /> */}
 				<div className='w-1/2 flex flex-col gap-[30px] ml-auto'>
 					<Title variant='h2' className=''>
 						About us
