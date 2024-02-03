@@ -81,6 +81,13 @@ const config: Config = {
 				'border-vertical': 'animateBorderVertical 30s linear infinite',
 				'border-horizontal':
 					'animateBorderHorizontal 30s linear infinite'
+			},
+			backgroundImage: {
+				"banner-team-gradient": `linear-gradient(
+					180deg,
+					rgba(60, 47, 199, 0.6) 0%,
+					rgba(111, 56, 189, 0.6) 100%
+				)`
 			}
 		}
 	},
