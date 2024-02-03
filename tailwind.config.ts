@@ -11,7 +11,8 @@ const config: Config = {
 		extend: {
 			colors: {
 				mainBackground: '#181223',
-				mainText: '#fff',
+				mainText: '#FFFFFF',
+				secondaryText: '#D9D9D9',
 				accent: '#1FC6C6'
 			},
 			boxShadow: {
