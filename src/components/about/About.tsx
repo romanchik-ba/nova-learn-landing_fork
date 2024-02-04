@@ -7,7 +7,7 @@ import { Text, Title } from '../ui'
 
 export const About = () => {
 	return (
-		<section className='relative w-full min-h-[757px] mb-[250px]'>
+		<section className='relative w-full min-h-[757px] mb-[450px]'>
 			<AboutBG />
 			<Container className='flex'>
 				<div className='w-1/2 pt-[270px]'>
