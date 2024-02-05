@@ -1,3 +1,4 @@
+import { About } from '@/components/about/About'
 import { Hero } from '@/components/hero'
 import { MainBG } from '@/components/image'
 import { Mentors } from '@/components/mentors'
@@ -14,6 +15,7 @@ function Home() {
 			<MainBG />
 			<Hero />
 			<Stack />
+			<About />
 			<Mentors />
 			<StudentProjects />
 			<Review />
