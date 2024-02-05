@@ -8,7 +8,7 @@ export const Hero = () => {
 			<Container className='flex'>
 				<div className='relative flex flex-col gap-[30px] pt-[88px] pb-[44px]'>
 					<Title variant='h1'>From Zero to Hero with Us</Title>
-					<Text transparent className='max-w-[426px] mb-[18px]'>
+					<Text className='max-w-[426px] mb-[18px]'>
 						We&apos;ll Teach You All the Latest Technologies with
 						Hands-On Practice
 					</Text>

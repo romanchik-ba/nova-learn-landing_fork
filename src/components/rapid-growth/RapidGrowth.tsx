@@ -9,7 +9,7 @@ import { Text, Title } from '../ui'
 
 export const RapidGrowth = () => {
 	return (
-		<section className='my-[105px]'>
+		<section className='mb-[250px]'>
 			<Container className='relative'>
 				<Image
 					className='absolute bottom-0 left-[-2.5px] object-cover w-full h-[82%]'

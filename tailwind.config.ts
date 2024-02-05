@@ -11,7 +11,8 @@ const config: Config = {
 		extend: {
 			colors: {
 				mainBackground: '#181223',
-				mainText: '#fff',
+				mainText: '#FFFFFF',
+				secondaryText: '#D9D9D9',
 				accent: '#1FC6C6'
 			},
 			boxShadow: {
@@ -75,11 +76,18 @@ const config: Config = {
 			},
 			animation: {
 				'stack-slider': 'stackSlider 20s linear infinite',
-				rotate: 'rotate 40s linear infinite',
+				'rotate': 'rotate 40s linear infinite',
 				'rotate-reverse': 'rotateReverse 30s linear infinite',
 				'border-vertical': 'animateBorderVertical 30s linear infinite',
 				'border-horizontal':
 					'animateBorderHorizontal 30s linear infinite'
+			},
+			backgroundImage: {
+				"banner-team-gradient": `linear-gradient(
+					180deg,
+					rgba(60, 47, 199, 0.6) 0%,
+					rgba(111, 56, 189, 0.6) 100%
+				)`
 			}
 		}
 	},
