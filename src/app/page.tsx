@@ -1,3 +1,4 @@
+import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { MainBG } from '@/components/image'
 import { News } from '@/components/news'
@@ -9,6 +10,7 @@ import { StudentProjects } from '@/components/student-projects'
 function Home() {
 	return (
 		<>
+			<Header />
 			<MainBG />
 			<Hero />
 			<Stack />
