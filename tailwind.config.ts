@@ -75,7 +75,7 @@ const config: Config = {
 			},
 			animation: {
 				'stack-slider': 'stackSlider 20s linear infinite',
-				rotate: 'rotate 40s linear infinite',
+				'rotate': 'rotate 40s linear infinite',
 				'rotate-reverse': 'rotateReverse 30s linear infinite',
 				'border-vertical': 'animateBorderVertical 30s linear infinite',
 				'border-horizontal':

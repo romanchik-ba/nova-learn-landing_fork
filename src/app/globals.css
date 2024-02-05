@@ -19,3 +19,12 @@ body {
 .font-nunitoSans {
 	font-family: var(--font-nunitoSans);
 }
+
+.scrollbar-disable {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+.scrollbar-disable::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
