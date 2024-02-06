@@ -8,8 +8,8 @@ export const Review = () => {
 		<section className='relative w-full mb-[250px]'>
 			<ReviewBG />
 			<Container>
-				<Title className='mb-[120px]' variant='h3'>
-					What our student say
+				<Title className='mb-[30px] sm:mb-[120px]' variant='h2'>
+					What our students say
 				</Title>
 				<ReviewSlider />
 			</Container>

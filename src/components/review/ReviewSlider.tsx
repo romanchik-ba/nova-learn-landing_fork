@@ -3,7 +3,7 @@
 import Autoplay, { type AutoplayType } from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { emblaScrollToSlideWithDirection } from '@/utils/emblaScrollToSlideWithDirection'
 
@@ -14,6 +14,7 @@ export const ReviewSlider = () => {
 	const [activeIndex, setActiveIndex] = useState<number>(0)
 
 	const sliderBodyRef = useRef<HTMLDivElement>(null)
+	const isManualSlideChange = useRef<boolean>(false)
 
 	const [sliderReviewRef, sliderReviewApi] = useEmblaCarousel(
 		{
@@ -23,7 +24,7 @@ export const ReviewSlider = () => {
 		},
 		[
 			Autoplay({
-				delay: 7000,
+				delay: 15000,
 				stopOnInteraction: false
 			})
 		]
@@ -34,6 +35,7 @@ export const ReviewSlider = () => {
 			if (!sliderReviewApi) return
 
 			if (index !== activeIndex) {
+				isManualSlideChange.current = true
 				emblaScrollToSlideWithDirection(
 					sliderReviewApi,
 					index,
@@ -47,10 +49,26 @@ export const ReviewSlider = () => {
 				autoplaySlider.reset()
 
 				setActiveIndex(index)
+				isManualSlideChange.current = false
 			}
 		},
 		[sliderReviewApi, activeIndex]
 	)
+
+	const autoplayChangeSlideHandler = () => {
+		// ONLY AUTOPLAY SCROLL
+		if (isManualSlideChange.current || !sliderReviewApi) return
+
+		setActiveIndex(prev => {
+			return prev + 1 >= reviewItemsArr.length ? 0 : prev + 1
+		}) // if last slide -> first slide
+	}
+
+	useEffect(() => {
+		// add events to slider
+		if (!sliderReviewApi) return
+		sliderReviewApi.on('select', autoplayChangeSlideHandler)
+	}, [sliderReviewApi]) // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
 		<div className='overflow-hidden -mr-[200px]' ref={sliderReviewRef}>
