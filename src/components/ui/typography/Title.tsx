@@ -16,7 +16,7 @@ export const Title = ({ variant, children, className }: titleProps) => {
 			? 'font-bold leading-[84px] sm:text-[48px] md:text-[64px] lg:text-[80px]'
 			: '',
 		variant === 'h2'
-			? 'font-bold leading-[68px] sm:text-[32px] md:text-[48px] lg:text-[64px]'
+			? 'font-bold leading-[68px] sm:text-[42px] md:text-[48px] lg:text-[64px]'
 			: '',
 		variant === 'h3'
 			? 'font-bold leading-[68px] sm:text-[28px] md:text-[36px] lg:text-[48px]'
