@@ -1,5 +1,7 @@
+import { About } from '@/components/about/About'
 import { Hero } from '@/components/hero'
 import { MainBG } from '@/components/image'
+import { Mentors } from '@/components/mentors'
 import { News } from '@/components/news'
 import { RapidGrowth } from '@/components/rapid-growth'
 import { Review } from '@/components/review'
@@ -13,6 +15,8 @@ function Home() {
 			<MainBG />
 			<Hero />
 			<Stack />
+			<About />
+			<Mentors />
 			<StudentProjects />
 			<Review />
 			<News />
