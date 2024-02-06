@@ -19,7 +19,7 @@ export const Stack = () => {
 				height='490px'
 			/>
 			<Container>
-				<Title variant='h4' className='mb-[17px]'>
+				<Title variant='h2' className='mb-[26px] sm:mb-[17px]'>
 					Your Future Tech Stack
 				</Title>
 				<StackSlider />
