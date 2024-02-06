@@ -17,13 +17,19 @@ export const ReviewSlide = ({
 	return (
 		<article
 			onClick={() => onClick(index)}
-			className='pr-[24px] grow-0 shrink-0 cursor-pointer basis-[27%] min-w-0 '
+			className='pr-[10px] grow-0 shrink-0 cursor-pointer basis-[350px] sm:basis-[390px] min-w-0 sm:pr-[24px]'
 		>
-			<div className='transition-all duration-500 pt-[6px] pb-[15px] px-[35px] bg-[#3D3570] rounded-[15px] hover:scale-105 m-[8px] hover:bg-[#5e53a1]'>
-				<div className='flex gap-x-[15px] mb-[15px]'>
-					<Image src={avatar} alt={name} className='!h-[94px]' />
+			<div className='transition-all duration-500 py-[16px] px-[28px] sm:px-[35px] bg-[#3D3570] rounded-[15px] hover:scale-105 m-[8px] hover:bg-[#5e53a1]'>
+				<div className='flex gap-x-[10px] sm:gap-x-[15px] mb-[10px] sm:mb-[15px]'>
+					<Image
+						src={avatar}
+						alt={name}
+						className='!h-[84px] !w-[84px] sm:!h-[94px] sm:!w-[94px]'
+					/>
 					<div className='flex flex-col justify-center'>
-						<Text className='uppercase'>{name}</Text>
+						<Text className='uppercase mb-[5px] sm:mb-[10px]'>
+							{name}
+						</Text>
 						<ul className='flex gap-x-[1px]'>
 							{Array.from({ length: stars }, (_, index) => (
 								<li key={index}>
