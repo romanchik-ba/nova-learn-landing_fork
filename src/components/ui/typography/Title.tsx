@@ -16,13 +16,13 @@ export const Title = ({ variant, children, className }: titleProps) => {
 			? 'text-[42px] font-bold leading-[84px] sm:text-[48px] md:text-[64px] lg:text-[80px]'
 			: '',
 		variant === 'h2'
-			? 'text-[36px] font-bold leading-[68px] sm:text-[42px] md:text-[48px] lg:text-[64px]'
+			? 'text-[42px] font-bold leading-[68px] sm:text-[48px] md:text-[64px]'
 			: '',
 		variant === 'h3'
-			? 'text-[22px] font-bold leading-[68px] sm:text-[28px] md:text-[36px] lg:text-[48px]'
+			? 'text-[28px] font-bold leading-[68px] sm:text-[36px] md:text-[48px]'
 			: '',
 		variant === 'h4'
-			? 'text-[18px] font-bold leading-[34px] sm:text-[24px] md:text-[28px] lg:text-[32px]'
+			? 'text-[24px] font-bold leading-[34px] sm:text-[28px] md:text-[32px]'
 			: '',
 		className || ''
 	)
