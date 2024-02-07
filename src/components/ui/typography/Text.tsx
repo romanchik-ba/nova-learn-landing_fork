@@ -9,7 +9,7 @@ interface titleProps {
 
 export const Text = ({ children, className }: titleProps) => {
 	const textClasses = classNames(
-		'text-[20px] text-secondaryText leading-[26px] font-nunitoSans',
+		'text-[16px] text-secondaryText leading-[26px] font-nunitoSans sm:text-[18px] md:text-[20px]',
 		className || ''
 	)
 
