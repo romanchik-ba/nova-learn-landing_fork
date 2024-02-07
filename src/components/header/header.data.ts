@@ -6,9 +6,9 @@ type THeaderNavItemsArr = {
 
 export const headerNavItemsArr: THeaderNavItemsArr[] = [
 	{href: "#",text: "Courses"},
-	{href: "#",text: "About us"},
-	{href: "#",text: "Our mentors"},
-	{href: "#",text: "Projects"},
-	{href: "#",text: "News"}
+	{href: "#about-us",text: "About us"},
+	{href: "#our-mentors",text: "Our mentors"},
+	{href: "#projects",text: "Projects"},
+	{href: "#news",text: "News"}
 ]
 

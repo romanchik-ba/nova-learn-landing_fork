@@ -8,7 +8,10 @@ import { Text, Title } from '../ui'
 
 export const About = () => {
 	return (
-		<section className='relative w-full min-h-[757px] mb-[450px]'>
+		<section
+			id='about-us'
+			className='relative w-full min-h-[757px] mb-[450px] scroll-smooth'
+		>
 			<AboutBG />
 			<Blink
 				className='right-0 top-[-100px] opacity-50'
