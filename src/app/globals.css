@@ -28,3 +28,24 @@ body {
 	width: 0;
 	height: 0;
 }
+
+.rapid-growth-bg {
+	background-image: url('../assets/rapid-growth.png');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 540px) {
+	.rapid-growth-bg {
+		background-size: 1040px;
+	}
+}
+
+@media (max-width: 440px) {
+	.rapid-growth-bg {
+		background-size: 900px;
+	}
+	.rapid-growth-bg {
+		background-size: 850px;
+	}
+}
