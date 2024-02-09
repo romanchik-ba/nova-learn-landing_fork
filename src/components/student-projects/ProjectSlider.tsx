@@ -74,9 +74,9 @@ export const ProjectSlider = () => {
 	}, [sliderThumbsRefApi]) // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
-		<div className='grow-0 shrink basis-[53%] max-w-full'>
-			<div className=' pointer-events-none mb-[32px] ml-[15px]'>
-				<div className='relative pb-[390px]'>
+		<div className='grow-0 shrink md:basis-[53%] max-w-full'>
+			<div className='pointer-events-none min-[700px]:mb-[32px] mb-[20px] ml-[7px]'>
+				<div className='relative pb-[70%]'>
 					{projectsItemsArr.map(({ src }, index) => (
 						<ProjectActive
 							src={src}
