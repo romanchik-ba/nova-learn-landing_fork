@@ -10,7 +10,13 @@ type TButtonProps = {
 	active?: boolean
 	textIcon?: boolean
 	type?: 'button' | 'submit' | 'reset'
-	variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'icon'
+	variant?:
+		| 'primary'
+		| 'secondary'
+		| 'outline'
+		| 'ghost'
+		| 'icon'
+		| 'header-burger'
 	onClick?: () => void
 }
 
@@ -45,7 +51,9 @@ export const Button = ({
 		link && active
 			? 'text-[18px] leading-[22px] text-accent border-none hover:brightness-125 active:brightness-90'
 			: '',
-		className || ''
+		link && variant === 'header-burger'
+			? 'text-[20px] leading-[24px] text-nowrap text-[#FFFFFFB2]'
+			: className || ''
 	)
 
 	if (link) {

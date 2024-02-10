@@ -3,16 +3,30 @@ import Image from 'next/image'
 import Logo from '../../assets/logo.svg'
 import { Container } from '../container'
 import { Button } from '../ui'
+import { HeaderMenuBurger } from './HeaderMenuBurger'
 import { headerNavItemsArr } from './header.data'
 
-export const Header = () => {
+export const Header = ({
+	isMenuOpen,
+	setIsMenuOpen
+}: {
+	isMenuOpen: boolean
+	setIsMenuOpen: (o: boolean) => void // eslint-disable-line no-unused-vars
+}) => {
 	return (
 		<header className='w-full pt-[22px]'>
 			<Container className='flex justify-between items-center'>
-				<div>
-					<Image src={Logo} alt='Logo'></Image>
+				<div className='flex gap-x-[40px] items-center'>
+					<HeaderMenuBurger
+						isMenuOpen={isMenuOpen}
+						setIsMenuOpen={setIsMenuOpen}
+					/>
+					<div>
+						<Image src={Logo} alt='Logo'></Image>
+					</div>
 				</div>
-				<nav>
+
+				<nav className='max-[859px]:hidden'>
 					<ul className='flex gap-x-[20px]'>
 						{headerNavItemsArr.map(({ href, text }) => (
 							<li key={href}>
@@ -22,7 +36,7 @@ export const Header = () => {
 					</ul>
 				</nav>
 				<Button
-					className='border !border-solid border-[#D9D9D9] rounded-[10px] text-[#D9D9D9] py-[11px] px-[7px] hover:border-accent'
+					className='border !border-solid border-[#D9D9D9] rounded-[10px] text-[#D9D9D9] text-[15px] min-[750px]:text-[18px] py-[5px] min-[750px]:py-[11px] px-[7px] hover:border-accent'
 					link='#'
 				>
 					Sign Up
