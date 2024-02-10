@@ -18,7 +18,13 @@ export const ProjectActive = ({
 	return (
 		<div className={projectClassNames}>
 			<div className='border border-solid border-[#8051F8] bg-[#181223] rounded-[20px]'>
-				<Image className='w-[560px] h-[380px]' src={src} alt='image' />
+				<div className='p-[10px] rounded-[20px]'>
+					<Image
+						className='object-cover rounded-[20px]'
+						src={src}
+						alt='image'
+					/>
+				</div>
 			</div>
 		</div>
 	)

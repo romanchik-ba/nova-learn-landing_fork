@@ -15,10 +15,10 @@ export const StudentProjects = () => {
 				className='opacity-[25%] -top-[330px] -right-[440px]'
 			/>
 			<Container>
-				<div className='flex justify-between gap-x-[50px]'>
+				<div className='flex  lg:gap-x-[50px] md:flex-row md:justify-between flex-col'>
 					<Title
-						variant='h3'
-						className='w-full grow-0 shrink basis-[42%]'
+						variant='h2'
+						className='w-full grow-0 shrink md:basis-[42%] md:mb-0 mb-[30px]'
 					>
 						Our students project
 					</Title>

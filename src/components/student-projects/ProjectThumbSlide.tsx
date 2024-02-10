@@ -14,7 +14,7 @@ export const ProjectThumbSlide = ({
 	className?: string
 }) => {
 	const projectThumbSlideClassName = classNames(
-		'select-none min-w-0 pl-[7px] basis-[35%] shrink-0 grow-0 cursor-pointer projects-slider',
+		'select-none min-w-0 pr-[7px] basis-[40%] min-[440px]:basis-[35%] shrink-0 grow-0 cursor-pointer projects-slider',
 		className || ''
 	)
 
@@ -25,14 +25,16 @@ export const ProjectThumbSlide = ({
 		>
 			<div
 				className={classNames(
-					'border border-solid border-[#8051F8] rounded-[20px] p-[10px] m-[8px] hover:shadow-projectThumb hover:scale-105 transition-all duration-500'
+					'border border-solid border-[#8051F8] rounded-[20px] p-[10px] m-[8px] hover:shadow-projectThumb hover:scale-105 transition-all duration-500 pb-[62%] md:pb-[60%]'
 				)}
 			>
-				<Image
-					className='block h-[140px] w-full object-cover pointer-events-none'
-					src={src}
-					alt='image'
-				/>
+				<div className='relative p-[5px] pb-0'>
+					<Image
+						className='absolute top-0 left-0 block object-cover pointer-events-none rounded-[20px]'
+						src={src}
+						alt='image'
+					/>
+				</div>
 			</div>
 		</article>
 	)
