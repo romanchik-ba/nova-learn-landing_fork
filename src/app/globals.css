@@ -8,6 +8,10 @@
 	}
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	@apply bg-mainBackground text-mainText;
 }
