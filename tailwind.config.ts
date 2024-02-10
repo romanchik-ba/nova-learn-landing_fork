@@ -8,10 +8,14 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}'
 	],
 	future: {
-		hoverOnlyWhenSupported: true, // disable hover on mobile devices
+		hoverOnlyWhenSupported: true // disable hover on mobile devices
 	},
 	theme: {
 		extend: {
+			screens: {
+				sq: '550px',
+				xq: '900px'
+			},
 			colors: {
 				mainBackground: '#181223',
 				mainText: '#FFFFFF',
@@ -79,14 +83,14 @@ const config: Config = {
 			},
 			animation: {
 				'stack-slider': 'stackSlider 20s linear infinite',
-				'rotate': 'rotate 40s linear infinite',
+				rotate: 'rotate 40s linear infinite',
 				'rotate-reverse': 'rotateReverse 30s linear infinite',
 				'border-vertical': 'animateBorderVertical 30s linear infinite',
 				'border-horizontal':
 					'animateBorderHorizontal 30s linear infinite'
 			},
 			backgroundImage: {
-				"banner-team-gradient": `linear-gradient(
+				'banner-team-gradient': `linear-gradient(
 					180deg,
 					rgba(60, 47, 199, 0.6) 0%,
 					rgba(111, 56, 189, 0.6) 100%
