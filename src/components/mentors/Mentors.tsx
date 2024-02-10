@@ -4,7 +4,7 @@ import { MentorsSlider } from './MentorsSlider'
 
 export const Mentors = () => {
 	return (
-		<section className='w-full relative mb-[250px]'>
+		<section id='our-mentors' className='w-full relative mb-[250px]'>
 			<Container className='flex flex-col justify-between min-[950px]:gap-x-[40px] min-[950px]:flex-row'>
 				<Title
 					variant='h2'
