@@ -1,7 +1,6 @@
 import { About } from '@/components/about/About'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
-import { MainBG } from '@/components/image'
 import { Mentors } from '@/components/mentors'
 import { News } from '@/components/news'
 import { RapidGrowth } from '@/components/rapid-growth'
@@ -14,7 +13,6 @@ function Home() {
 	return (
 		<>
 			<Header />
-			<MainBG />
 			<Hero />
 			<Stack />
 			<About />
