@@ -4,23 +4,15 @@ import Logo from '../../assets/logo.svg'
 import { Container } from '../container'
 import { Button } from '../ui'
 import { HeaderMenuBurger } from './HeaderMenuBurger'
+import './header.css'
 import { headerNavItemsArr } from './header.data'
 
-export const Header = ({
-	isMenuOpen,
-	setIsMenuOpen
-}: {
-	isMenuOpen: boolean
-	setIsMenuOpen: (o: boolean) => void // eslint-disable-line no-unused-vars
-}) => {
+export const Header = () => {
 	return (
 		<header className='w-full pt-[22px]'>
 			<Container className='flex justify-between items-center'>
 				<div className='flex gap-x-[40px] items-center'>
-					<HeaderMenuBurger
-						isMenuOpen={isMenuOpen}
-						setIsMenuOpen={setIsMenuOpen}
-					/>
+					<HeaderMenuBurger />
 					<div>
 						<Image src={Logo} alt='Logo'></Image>
 					</div>
