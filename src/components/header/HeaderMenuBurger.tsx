@@ -25,7 +25,7 @@ export const HeaderMenuBurger = () => {
 				className='absolute top-0 left-0 bottom-0 right-0 z-10'
 			/>
 			<div className='peer-checked/burger-state min-[860px]:hidden relative burger-body z-20'>
-				<label htmlFor='header-state'>
+				<label htmlFor='header-state cursor-pointer'>
 					<span className=' h-[2px] w-[20px] block mb-[6px] transition-all duration-1000 bg-[#fff]' />
 					<span className='h-[2px] w-[12px] block mb-[6px] transition-all duration-1000 bg-[#fff] translate-x-0' />
 					<span className='h-[2px] w-[14px] block mb-[6px] transition-all duration-1000 bg-[#fff] translate-x-0' />

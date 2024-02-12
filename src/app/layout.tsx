@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Montserrat, Nunito_Sans } from 'next/font/google'
 
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
+
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -29,7 +32,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={` ${montserrat.variable} ${nunitoSans.variable}`}>
-				{children}
+				<Header />
+				<main className='relative flex min-h-screen max-w-[1440px] flex-col items-center overflow-x-hidden m-auto max-[1090px]:px-[22px] bg-[url("../assets/mainBG.png")] bg-no-repeat bg-top'>
+					{children}
+				</main>
+				<Footer />
 			</body>
 		</html>
 	)
