@@ -1,7 +1,18 @@
-export const ProjectsBG = () => {
+import { classNames } from '@/utils/classNames'
+
+interface ProjectsBGProps {
+	className?: string
+}
+
+export const ProjectsBG = ({ className }: ProjectsBGProps) => {
+	const ProjectsBGClasses = classNames(
+		'absolute top-[-600px] right-[-116px] w-[790px] h-[1190px]  mix-blend-saturation -z-10',
+		className || ''
+	)
+
 	return (
 		<svg
-			className='absolute top-[-600px] right-[-116px] w-[790px] h-[1190px]  mix-blend-saturation -z-10'
+			className={ProjectsBGClasses}
 			width={674}
 			height={1190}
 			viewBox='0 0 674 1190'
