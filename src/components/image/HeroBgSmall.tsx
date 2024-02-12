@@ -1,4 +1,4 @@
-export const HeroBgSmall = () => {
+export const HeroBgSmall = ({ className }: { className?: string }) => {
 	return (
 		<svg
 			width={200}
@@ -6,6 +6,7 @@ export const HeroBgSmall = () => {
 			viewBox='0 0 200 212'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
+			className={className}
 		>
 			<g opacity='0.8' filter='url(#filter0_f_20_378)'>
 				<path

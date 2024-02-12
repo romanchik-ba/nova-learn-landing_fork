@@ -10,7 +10,7 @@ export const News = () => {
 			className='relative w-full mb-[250px] overflow-hidden'
 		>
 			<Container>
-				<Title variant='h2' className='col-span-3'>
+				<Title variant='h2' className='mb-[25px] md:mb-0'>
 					Latest news
 				</Title>
 				<NewsItems />

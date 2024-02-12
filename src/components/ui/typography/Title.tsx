@@ -13,7 +13,7 @@ export const Title = ({ variant, children, className }: titleProps) => {
 		'text-mainText font-montserrat leading-[105%]',
 
 		variant === 'h1'
-			? 'text-[42px] font-bold leading-[84px] sm:text-[48px] md:text-[64px] lg:text-[80px]'
+			? 'text-[42px] font-bold leading-[50px] md:leading-[84px] sm:text-[48px] md:text-[64px] lg:text-[80px]'
 			: '',
 		variant === 'h2'
 			? 'text-[42px] font-bold leading-[68px] sm:text-[48px] md:text-[64px]'
