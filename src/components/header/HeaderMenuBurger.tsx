@@ -22,13 +22,16 @@ export const HeaderMenuBurger = () => {
 			/>
 			<label
 				htmlFor='header-state'
-				className='absolute top-0 left-0 bottom-0 right-0 z-10'
+				className='absolute top-0 left-0 bottom-0 right-0 z-10 hidden peer-checked/burger-state:block'
 			/>
-			<div className='peer-checked/burger-state min-[860px]:hidden relative burger-body z-20 mt-[5px]'>
-				<label htmlFor='header-state cursor-pointer'>
+			<div className='peer-checked/burger-state min-[860px]:hidden relative burger-body z-20'>
+				<label
+					htmlFor='header-state'
+					className='cursor-pointer mt-[5px]'
+				>
 					<span className=' h-[2px] w-[20px] block mb-[6px] transition-all duration-1000 bg-[#fff]' />
 					<span className='h-[2px] w-[12px] block mb-[6px] transition-all duration-1000 bg-[#fff] translate-x-0' />
-					<span className='h-[2px] w-[14px] block mb-[6px] transition-all duration-1000 bg-[#fff] translate-x-0' />
+					<span className='h-[2px] w-[14px] block transition-all duration-1000 bg-[#fff] translate-x-0' />
 				</label>
 				<nav className='absolute top-[45px] left-0 overflow-hidden bg-[#25808F] rounded-[10px] z-20 max-h-0 transition-all duration-[1000ms] header-menu-burger'>
 					<ul className='w-[165px] py-[8px] border border-solid border-transparent [border-image-source: linear-gradient(200.52deg, #23DCDC 3.48%, rgba(35, 220, 220, 0) 94.16%)]'>
