@@ -10,7 +10,7 @@ import { headerNavItemsArr } from './header.data'
 export const Header = () => {
 	return (
 		<header className='w-full pt-[22px]'>
-			<Container className='flex justify-between items-center'>
+			<Container className='flex justify-between items-center max-[1090px]:px-[22px]'>
 				<div className='flex gap-x-[40px] items-center'>
 					<HeaderMenuBurger />
 					<div>

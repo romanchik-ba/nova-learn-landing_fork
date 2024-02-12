@@ -1,7 +1,7 @@
-export const AboutBG = () => {
+export const AboutBG = ({className}: {className?: string}) => {
 	return (
 		<svg
-			className='absolute top-[-300px] left-0 -z-10'
+			className={className}
 			width={1440}
 			height={1340}
 			viewBox='0 0 1440 1340'
