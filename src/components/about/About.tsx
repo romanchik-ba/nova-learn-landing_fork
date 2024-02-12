@@ -25,7 +25,7 @@ export const About = () => {
 				width='900px'
 				height='900px'
 			/>
-			<Container className='flex flex-col-reverse xq:flex-row gap-[100px] xq:gap-0'>
+			<Container className='flex flex-col-reverse xq:flex-row gap-[50px] sq:gap-[100px] xq:gap-0'>
 				<div className='xq:w-1/2 xq:pt-[270px]'>
 					<div className='relative flex max-w-[250px] sq:max-w-[300px] py-[65px] mx-auto xq:ml-auto xq:mr-[30px]'>
 						<AboutSpin />
