@@ -1,6 +1,6 @@
 import { Container } from '../container'
 import { Blink } from '../icons/Blink'
-import { ProjectsBG } from '../image/ProjectsBG'
+import { ProjectsBG } from '../image/VaweBG'
 import { Title } from '../ui'
 import { ProjectSlider } from './ProjectSlider'
 

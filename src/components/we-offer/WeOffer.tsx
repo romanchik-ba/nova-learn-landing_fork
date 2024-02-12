@@ -1,8 +1,8 @@
 import { Blink } from '../icons/Blink'
-import { ProjectsBG } from '../image/ProjectsBG'
+import { ProjectsBG } from '../image/VaweBG'
 import { Title } from '../ui'
-import { CourseCard } from './CourseCard'
-import { courseItemsArr } from './Courses.data'
+import { courseItemsArr } from './WeOffer.data'
+import { CourseCard } from './WeOfferCard'
 
 export const Courses = () => {
 	return (
@@ -19,10 +19,16 @@ export const Courses = () => {
 					We offer
 				</Title>
 				{courseItemsArr.map(
-					({ src, alt, CourseName, CoursesQuantity, className }) => (
+					({
+						colorIcon,
+						alt,
+						CourseName,
+						CoursesQuantity,
+						className
+					}) => (
 						<CourseCard
 							key={alt}
-							src={src}
+							colorIcon={colorIcon}
 							alt={alt}
 							CourseName={CourseName}
 							CoursesQuantity={CoursesQuantity}

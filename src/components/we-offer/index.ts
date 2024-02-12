@@ -1,2 +1,2 @@
 export * from './WeOffer'
-export * from './CourseCard'
+export * from './WeOfferCard'
