@@ -7,6 +7,7 @@ import { CourseCard } from './WeOfferCard'
 export const Courses = () => {
 	return (
 		<section className='relative mb-[250px]'>
+			{/* <div className='flex justify-center'> */}
 			<VaweBG className='transform scale-x-[-1] -left-[206px] top-[0]' />
 			<Blink
 				color='#8F15FF'
@@ -14,8 +15,11 @@ export const Courses = () => {
 				height='740px'
 				className='opacity-[25%] top-[140px] -left-[306px] -z-10'
 			/>
-			<div className='flex flex-wrap max-w-[1065px] gap-[30px]'>
-				<Title variant='h2' className='w-[300px] mr-[250px] pt-[20px]'>
+			<div className='flex justify-center sm:justify-center md:justify-normal lg:justify-normal flex-wrap max-w-[1065px] gap-[30px]'>
+				<Title
+					variant='h2'
+					className='w-[300px] mr-[0px] sm:mr-[0px] md:mr-[90px] lg:mr-[250px] pt-[20px]'
+				>
 					We offer
 				</Title>
 				{courseItemsArr.map(
@@ -37,6 +41,7 @@ export const Courses = () => {
 					)
 				)}
 			</div>
+			{/* </div> */}
 		</section>
 	)
 }
