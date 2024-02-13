@@ -1,5 +1,5 @@
 import { Blink } from '../icons/Blink'
-import { ProjectsBG } from '../image/VaweBG'
+import { VaweBG } from '../image/VaweBG'
 import { Title } from '../ui'
 import { courseItemsArr } from './WeOffer.data'
 import { CourseCard } from './WeOfferCard'
@@ -7,7 +7,7 @@ import { CourseCard } from './WeOfferCard'
 export const Courses = () => {
 	return (
 		<section className='relative mb-[250px]'>
-			<ProjectsBG className='transform scale-x-[-1] -left-[206px] top-[0]' />
+			<VaweBG className='transform scale-x-[-1] -left-[206px] top-[0]' />
 			<Blink
 				color='#8F15FF'
 				width='740px'

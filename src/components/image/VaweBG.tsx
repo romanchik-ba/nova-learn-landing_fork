@@ -4,7 +4,7 @@ interface ProjectsBGProps {
 	className?: string
 }
 
-export const ProjectsBG = ({ className }: ProjectsBGProps) => {
+export const VaweBG = ({ className }: ProjectsBGProps) => {
 	const ProjectsBGClasses = classNames(
 		'absolute top-[-600px] right-[-116px] w-[790px] h-[1190px]  mix-blend-saturation -z-10',
 		className || ''

@@ -1,13 +1,13 @@
 import { Container } from '../container'
 import { Blink } from '../icons/Blink'
-import { ProjectsBG } from '../image/VaweBG'
+import { VaweBG } from '../image/VaweBG'
 import { Title } from '../ui'
 import { ProjectSlider } from './ProjectSlider'
 
 export const StudentProjects = () => {
 	return (
 		<section id='projects' className='relative w-full mb-[250px]'>
-			<ProjectsBG />
+			<VaweBG />
 			<Blink
 				color='#8F15FF'
 				width='740px'
