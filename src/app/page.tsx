@@ -8,6 +8,7 @@ import { Review } from '@/components/review'
 import { Stack } from '@/components/stack'
 import { StudentProjects } from '@/components/student-projects'
 import { TeamBanner } from '@/components/team-banner'
+import { Courses } from '@/components/we-offer'
 
 function Home() {
 	return (
@@ -15,6 +16,7 @@ function Home() {
 			<Header />
 			<Hero />
 			<Stack />
+			<Courses />
 			<About />
 			<Mentors />
 			<StudentProjects />
