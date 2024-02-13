@@ -19,7 +19,7 @@ export const Courses = () => {
 				<div className='flex justify-center sm:justify-center md:justify-normal lg:justify-normal flex-wrap max-w-[1065px] gap-[30px]'>
 					<Title
 						variant='h2'
-						className='w-[300px] mr-[55px] sm:mr-[0px] md:mr-[90px] lg:mr-[250px] pt-[20px]'
+						className='w-[300px] mr-[55px] sm:mr-[0px] md:mr-[130px] lg:mr-[250px] pt-[20px]'
 					>
 						We offer
 					</Title>
