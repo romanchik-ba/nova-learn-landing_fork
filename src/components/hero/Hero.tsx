@@ -18,9 +18,7 @@ export const Hero = () => {
 					<div className='absolute left-[210px] top-[-30px] sq:left-[270px] sq:top-[-60px] xq:left-[-30px] xq:top-[50px] animate-rotate-reverse xq:opacity-80'>
 						<HeroBgSmall className='w-[140px] h-[140px] sq:w-[200px] sq:h-[200px]' />
 					</div>
-					{/* <div className='w-[300px] h-[300px] animate-rotate z-10'> */}
 					<HeroBgBig className='w-[350px] h-[350px] sq:w-[500px] sq:h-[500px] animate-rotate' />
-					{/* </div> */}
 				</div>
 			</Container>
 		</section>

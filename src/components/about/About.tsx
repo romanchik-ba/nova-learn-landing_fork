@@ -10,7 +10,7 @@ export const About = () => {
 	return (
 		<section
 			id='about-us'
-			className='relative w-full min-h-[757px] mb-[450px] scroll-smooth'
+			className='relative w-full min-h-[757px] pb-[100px] xq:pb-[250px] scroll-smooth'
 		>
 			<AboutBG className='absolute top-[-30px] left-[-650px] xq:top-[-300px] xq:left-0 h-[800px] xq:h-auto rotate-[90deg] xq:rotate-0 -z-10' />
 			<Blink
