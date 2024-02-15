@@ -1,0 +1,15 @@
+.header-burger-state:checked ~ .burger-body span {
+	@apply bg-[#24e0e0];
+}
+
+.header-burger-state:checked ~ .burger-body span:nth-child(2) {
+	@apply translate-x-[3px];
+}
+
+.header-burger-state:checked ~ .burger-body span:last-child {
+	@apply translate-x-[2px];
+}
+
+.header-burger-state:checked ~ .burger-body .header-menu-burger {
+	@apply max-h-[100dvh];
+}

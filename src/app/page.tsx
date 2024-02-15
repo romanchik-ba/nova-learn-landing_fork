@@ -1,5 +1,4 @@
 import { About } from '@/components/about/About'
-import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { Mentors } from '@/components/mentors'
 import { News } from '@/components/news'
@@ -13,7 +12,6 @@ import { Courses } from '@/components/we-offer'
 function Home() {
 	return (
 		<>
-			<Header />
 			<Hero />
 			<Stack />
 			<Courses />
