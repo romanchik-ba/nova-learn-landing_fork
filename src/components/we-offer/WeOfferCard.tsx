@@ -19,7 +19,7 @@ export const CourseCard = ({
 	className
 }: CourseCardProps) => {
 	const CourseCardClasses = classNames(
-		'flex items-center border border-[#8051F8] py-[35px] px-[30px] rounded-[15px] max-w-[501px] min-w-[300px] hover:bg-[#3D3570] transition active:bg-opacity-0 gap-x-[10px]',
+		'flex justify-center sm:justify-normal md:justify-normal lg:justify-normal items-center border border-[#8051F8] py-[35px] px-[30px] rounded-[15px] max-w-[501px] min-w-[345px] sm:min-w-[300px] md:min-w-[300px] lg:min-w-[300px] hover:bg-[#3D3570] transition active:bg-opacity-0 gap-x-[10px]',
 		className || ''
 	)
 
