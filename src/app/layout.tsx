@@ -32,8 +32,8 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={` ${montserrat.variable} ${nunitoSans.variable}`}>
-				<Header />
 				<main className='relative flex min-h-screen max-w-[1440px] flex-col items-center overflow-x-hidden m-auto bg-[url("../assets/mainBG.png")] bg-no-repeat bg-top'>
+					<Header />
 					{children}
 				</main>
 				<Footer />

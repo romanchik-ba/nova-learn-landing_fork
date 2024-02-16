@@ -5,7 +5,7 @@ import { StackSlider } from './StackSlider'
 
 export const Stack = () => {
 	return (
-		<section className='relative w-full pb-[1250px]'>
+		<section className='relative w-full pb-[100px] xq:pb-[250px]'>
 			<Blink
 				color='#211240'
 				className='-left-[240px] -top-[140px] opacity-[74%]'

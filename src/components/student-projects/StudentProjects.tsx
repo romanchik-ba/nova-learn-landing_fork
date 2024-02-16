@@ -6,7 +6,10 @@ import { ProjectSlider } from './ProjectSlider'
 
 export const StudentProjects = () => {
 	return (
-		<section id='projects' className='relative w-full mb-[250px]'>
+		<section
+			id='projects'
+			className='relative w-full pb-[100px] xq:pb-[250px]'
+		>
 			<VaweBG />
 			<Blink
 				color='#8F15FF'

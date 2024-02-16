@@ -7,7 +7,7 @@ export const News = () => {
 	return (
 		<section
 			id='news'
-			className='relative w-full mb-[250px] overflow-hidden'
+			className='relative w-full pb-[100px] xq:pb-[250px] my-[100px] overflow-hidden'
 		>
 			<Container>
 				<Title variant='h2' className='mb-[25px] md:mb-0'>

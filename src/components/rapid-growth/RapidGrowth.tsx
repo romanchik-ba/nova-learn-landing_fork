@@ -3,7 +3,7 @@ import { Text, Title } from '../ui'
 
 export const RapidGrowth = () => {
 	return (
-		<section className='mb-[250px] w-full'>
+		<section className='pb-[100px] xq:pb-[250px] w-full'>
 			<Container>
 				<div className='flex rapid-growth-bg min-[540px]:pb-[500px] min-[440px]:pb-[450px] pb-[380px] justify-center min-[1040px]:justify-end min-[1040px]:pb-[210px]'>
 					<div className='min-[1040px]:max-w-[515px] max-[1040px]:mb-[40px] max-[540px]:mb-0'>
