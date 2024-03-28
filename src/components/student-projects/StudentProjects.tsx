@@ -23,7 +23,7 @@ export const StudentProjects = () => {
 						variant='h2'
 						className='w-full grow-0 shrink md:basis-[42%] md:mb-0 mb-[30px]'
 					>
-						Our students project
+						Our student&apos;s projects
 					</Title>
 					<ProjectSlider />
 				</div>
